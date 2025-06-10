@@ -1,9 +1,9 @@
 [
   {
-    "name": "fc1",
+    "name": "dense_1",
     "type": "Dense",
     "config": {
-      "name": "fc1",
+      "name": "dense_1",
       "trainable": true,
       "dtype": {
         "module": "keras",
@@ -13,7 +13,7 @@
         },
         "registered_name": null
       },
-      "units": 200,
+      "units": 256,
       "activation": "relu",
       "use_bias": true,
       "kernel_initializer": {
@@ -36,15 +36,15 @@
       "bias_constraint": null
     },
     "weights": [
-      "fc1_0",
-      "fc1_1"
+      "dense_1_0",
+      "dense_1_1"
     ]
   },
   {
-    "name": "fc2",
+    "name": "dense_2",
     "type": "Dense",
     "config": {
-      "name": "fc2",
+      "name": "dense_2",
       "trainable": true,
       "dtype": {
         "module": "keras",
@@ -54,7 +54,7 @@
         },
         "registered_name": null
       },
-      "units": 100,
+      "units": 128,
       "activation": "relu",
       "use_bias": true,
       "kernel_initializer": {
@@ -77,15 +77,15 @@
       "bias_constraint": null
     },
     "weights": [
-      "fc2_0",
-      "fc2_1"
+      "dense_2_0",
+      "dense_2_1"
     ]
   },
   {
-    "name": "fc3",
+    "name": "dense_3",
     "type": "Dense",
     "config": {
-      "name": "fc3",
+      "name": "dense_3",
       "trainable": true,
       "dtype": {
         "module": "keras",
@@ -95,7 +95,7 @@
         },
         "registered_name": null
       },
-      "units": 50,
+      "units": 64,
       "activation": "relu",
       "use_bias": true,
       "kernel_initializer": {
@@ -118,15 +118,15 @@
       "bias_constraint": null
     },
     "weights": [
-      "fc3_0",
-      "fc3_1"
+      "dense_3_0",
+      "dense_3_1"
     ]
   },
   {
-    "name": "output",
+    "name": "output_softmax",
     "type": "Dense",
     "config": {
-      "name": "output",
+      "name": "output_softmax",
       "trainable": true,
       "dtype": {
         "module": "keras",
@@ -159,8 +159,8 @@
       "bias_constraint": null
     },
     "weights": [
-      "output_0",
-      "output_1"
+      "output_softmax_0",
+      "output_softmax_1"
     ]
   }
 ]
