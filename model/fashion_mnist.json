@@ -1,9 +1,9 @@
 [
   {
-    "name": "dense_1",
+    "name": "fc1",
     "type": "Dense",
     "config": {
-      "name": "dense_1",
+      "name": "fc1",
       "trainable": true,
       "dtype": {
         "module": "keras",
@@ -13,7 +13,7 @@
         },
         "registered_name": null
       },
-      "units": 512,
+      "units": 200,
       "activation": "relu",
       "use_bias": true,
       "kernel_initializer": {
@@ -36,35 +36,15 @@
       "bias_constraint": null
     },
     "weights": [
-      "dense_1_0",
-      "dense_1_1"
+      "fc1_0",
+      "fc1_1"
     ]
   },
   {
-    "name": "dropout",
-    "type": "Dropout",
-    "config": {
-      "name": "dropout",
-      "trainable": true,
-      "dtype": {
-        "module": "keras",
-        "class_name": "DTypePolicy",
-        "config": {
-          "name": "float32"
-        },
-        "registered_name": null
-      },
-      "rate": 0.3,
-      "seed": null,
-      "noise_shape": null
-    },
-    "weights": []
-  },
-  {
-    "name": "dense_2",
+    "name": "fc2",
     "type": "Dense",
     "config": {
-      "name": "dense_2",
+      "name": "fc2",
       "trainable": true,
       "dtype": {
         "module": "keras",
@@ -74,7 +54,7 @@
         },
         "registered_name": null
       },
-      "units": 256,
+      "units": 100,
       "activation": "relu",
       "use_bias": true,
       "kernel_initializer": {
@@ -97,35 +77,15 @@
       "bias_constraint": null
     },
     "weights": [
-      "dense_2_0",
-      "dense_2_1"
+      "fc2_0",
+      "fc2_1"
     ]
   },
   {
-    "name": "dropout_1",
-    "type": "Dropout",
-    "config": {
-      "name": "dropout_1",
-      "trainable": true,
-      "dtype": {
-        "module": "keras",
-        "class_name": "DTypePolicy",
-        "config": {
-          "name": "float32"
-        },
-        "registered_name": null
-      },
-      "rate": 0.2,
-      "seed": null,
-      "noise_shape": null
-    },
-    "weights": []
-  },
-  {
-    "name": "dense_3",
+    "name": "fc3",
     "type": "Dense",
     "config": {
-      "name": "dense_3",
+      "name": "fc3",
       "trainable": true,
       "dtype": {
         "module": "keras",
@@ -135,7 +95,7 @@
         },
         "registered_name": null
       },
-      "units": 128,
+      "units": 50,
       "activation": "relu",
       "use_bias": true,
       "kernel_initializer": {
@@ -158,15 +118,15 @@
       "bias_constraint": null
     },
     "weights": [
-      "dense_3_0",
-      "dense_3_1"
+      "fc3_0",
+      "fc3_1"
     ]
   },
   {
-    "name": "output_softmax",
+    "name": "output",
     "type": "Dense",
     "config": {
-      "name": "output_softmax",
+      "name": "output",
       "trainable": true,
       "dtype": {
         "module": "keras",
@@ -199,8 +159,8 @@
       "bias_constraint": null
     },
     "weights": [
-      "output_softmax_0",
-      "output_softmax_1"
+      "output_0",
+      "output_1"
     ]
   }
 ]
